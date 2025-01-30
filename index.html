@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Delicious Resistance Sign-Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap">
+</head>
+<header>
+  <div id="heading">
+    <h3>RED DELICIOUS</h3>
+    <h1 id="title">RESISTANCE</h1>
+  </div>
+  <div id="subheading">
+    <p id="description">These apples do not deserve their name, and it is time to do something about it!</p>
+  </div>
+</header>
+<body>
+  <main>
+    <div id=wrapper>
+      <form id="survey-form">
+         <label for="first-name" id="name-label">Name</label>
+         <input type="text" id="name" name="first-name" placeholder="Enter your name" required />
+         <label for="email" id="email-label">Email</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required />
+         <label for="number" id="number-label">Age (optional)</label>
+         <input type="number" id="number" name="age" min="13" max="100" placeholder="Enter your age (Ex. 18)"/>
+           <legend>Do you like Red Delicious Apples?</legend>
+            <div class="input-group">
+              <input type="radio" id="alignment1" name="alignment" class="inline" value="no" checked/>
+              <label for="alignment">No!</label>
+            </div>
+            <div class="input-group2">
+              <input type="radio" id="alignment2" name="alignment" class="inline" value="definitely-no" />
+              <label for="alignment">Definitely not!</label>
+            </div>
+              <label for="reason">What is your reason why?</label>
+                <select id="dropdown" name="reason" required>
+                  <option value="">Select an option</option>
+                  <option value="1">They taste like nothing.</option>
+                  <option value="2">Their texture is abhorrent.</option>
+                  <option value="3">They look way better than they taste.</option>
+                  <option value="4">I hold a grudge.</option>
+                </select>
+           <legend>What would you rename them?</legend>
+              <p id="checkbox-reminder">(Check all that apply)</p>
+           <div class="input-group">
+             <input type="checkbox" id="garbage" value="5" name="garbage" class="inline"/>
+             <label for="garbage">Tasteless Garbage Apples</label>
+           </div>
+           <div class="input-group">
+             <input type="checkbox" id="aesthetic" value="6" name="aesthetic" class="inline"/>
+             <label for="aesthetic">Aesthetic Only Apples</label>
+           </div>
+           <div class="input-group">
+             <input type="checkbox" id="dry" value="7" name="dry" class="inline"/>
+             <label for="dry">Dry Disgusting Apples</label>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" id="red" value="8" name="red" class="inline"/>
+              <label for="red">Red Disappointing Apples</label> <!-- This is my favorite name by the way -->
+            </div>
+            <div class="input-group2">
+              <input type="checkbox" id="letdown" value="9" name="letdown" class="inline"/>
+              <label for="letdown">Letdown Apples</label>
+            </div>
+          <label for="new-names">Any other name suggestions?</label>
+          <textarea id="name" name="new-names" rows="4" placeholder="Enter your suggestions here..."></textarea>
+            <div class="input-group2">
+              <input type="checkbox" id="terms" value="10" name="terms" class="inline" required/>
+           <label for="terms">I accept the <a href="https://docs.google.com/document/d/1mSbLqL8TWVLuXwNskcmqeFQxQ6mCTwVIJ12aFiOgcig/edit?usp=sharing" target="_blank">terms and conditions</a></label>
+            </div>
+          <input type="submit" id="submit">
+      </form>
+    </div>
+  </main>
+  <footer>
+      <p id="footer">© Copyright 2025 Red Delicious ResistanceAll Rights Reserved</p>
+  </footer>
+</body>
+</html>
